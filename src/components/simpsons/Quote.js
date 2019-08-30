@@ -1,21 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Quote({ quote }) {
+function Quote({ oneQuote }) {
   return (
     <div>
-      <p>{quote.quote}</p>
-      <p>{quote.image}</p>
-      <p>{quote.name}</p>
+      <p>{oneQuote.quote}</p>
+      <p>{oneQuote.image}</p>
+      <p>{oneQuote.character}</p>
     </div>
   );
 }
 
 Quote.propTypes = {
-  quote: PropTypes.shape({
+  oneQuote: PropTypes.shape({
     quote: PropTypes.string,
     image: PropTypes.string,
-    name: PropTypes.string
+    character: PropTypes.string
   })
 };
 
