@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 function Quote({ oneQuote }) {
   return (
     <div>
+      <img src={oneQuote.image}/>
       <p>{oneQuote.quote}</p>
-      <p>{oneQuote.image}</p>
       <p>{oneQuote.character}</p>
     </div>
   );
