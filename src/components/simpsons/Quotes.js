@@ -11,8 +11,15 @@ function Quotes({ quotes }) {
     </li>
   ));
 
+  function refreshPage(){
+    window.location.reload();
+  } 
+
   return (
-    <ul>{quoteElement}</ul>
+    <>
+      <ul>{quoteElement}</ul>
+      <button onClick={refreshPage}>Get Random Quote</button>
+    </>
   );
 }
 
